@@ -6,21 +6,27 @@
     <title>JavaIntroduce</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    body {
+        background-color: #1e1e1e;
+        color: #ffffff;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 20px;
+    }
+    pre {
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+</style>
+<script>
+    function executeCommand() {
+        // ここで実際のコマンド処理を行い、結果を出力する
+        var commandOutput = "コマンドの出力結果\n改行やフォーマットがそのまま保持されます";
+        document.getElementById("output").textContent = commandOutput;
+    }
+</script>
+</head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-    </header>
-    
-    <main>
-        <!-- Main content goes here -->
-    </main>
-
-    <footer>
-        <p>&copy; 2024 My Web App</p>
-    </footer>
-
-    <button>Button</button>
-
-    <script src="script.js"></script>
+    <button onclick="executeCommand()">コマンドを実行する</button>
+    <pre id="output"></pre>
 </body>
 </html>
