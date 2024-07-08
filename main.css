@@ -1,1 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 0px 10px;
+}
 
+.container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ingredients {
+    font-weight: normal;
+    font-size: 2rem;
+    padding-left: 10px; /* 要素内側の左部に 10px の余白 */
+    border-left: 15px solid; /* 要素境界の左端に幅 20px の実線 */
+    border-bottom: 4px solid; /* 要素境界の下端に幅 4px の実線 */
+  }
