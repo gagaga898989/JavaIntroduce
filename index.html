@@ -1,32 +1,57 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JavaIntroduce</title>
-
-<!-- main.cssを追加する-->
-<link rel="stylesheet" href="main.css">
-
-<script src="test.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>○○紹介WEBページ</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome</h1>
-    </header>
-    
-    <main>
-        <!-- Main content goes here -->
-    </main>
+	<header>
+		<h1>○○紹介WEBページ</h1>
+		<nav>
+			<ul>
+				<li><a href="#about">○○について</a></li>
+				<li><a href="#features">特徴</a></li>
+				<li><a href="#contact">お問い合わせ</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="about">
+			<h2>○○について</h2>
+			<p>○○は...です。</p>
+		</section>
+		
+		<section id="features">
+			<h2>特徴</h2>
+			<ul>
+				<li>特徴1</li>
+				<li>特徴2</li>
+				<li>特徴3</li>
+			</ul>
+		</section>
+		
+		<section id="contact">
+			<h2>お問い合わせ</h2>
+			<form>
+				<label for="name">名前：</label>
+				<input type="text" id="name" name="name">
+				
+				<label for="email">メールアドレス：</label>
+				<input type="email" id="email" name="email">
+				
+				<label for="message">メッセージ：</label>
+				<textarea id="message" name="message"></textarea>
+				
+				<button type="submit">送信</button>
+			</form>
+		</section>
+	</main>
 
-    <footer>
-        <p>&copy; 2024 My Web App</p>
-    </footer>
-
-    <button>Button</button>
-
-    <script src="script.js"></script>
+	<footer>
+		<p>&copy; 2024 ○○紹介WEBページ. All rights reserved.</p>
+	</footer>
 </body>
 </html>
-```
-
