@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>○○紹介WEBページ</title>
-	<link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptの紹介</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<header>
-		<h1>○○紹介WEBページ</h1>
-		<nav>
-			<ul>
-				<li><a href="#about">○○について</a></li>
-				<li><a href="#features">特徴</a></li>
-			</ul>
-		</nav>
-	</header>
-	
-	<main>
-		<div class="container">
-			<section id="about">
-				<h2>○○について</h2>
-				<p>○○は...です。</p>
-			</section>
-			
-			<section id="features">
-				<h2>特徴</h2>
-				<ul>
-					<li>特徴1</li>
-					<li>特徴2</li>
-					<li>特徴3</li>
-				</ul>
-			</section>
-		</div>
-	</main>
-
-	<footer>
-		<p>&copy; 2024 ○○紹介WEBページ. All rights reserved.</p>
-	</footer>
+    <header>
+        <h1>JavaScriptの紹介</h1>
+    </header>
+    <main>
+        <section id="intro">
+            <h2>JavaScriptとは？</h2>
+            <p>JavaScriptは、ウェブページに動的な機能を追加するためのプログラミング言語です。HTMLやCSSと組み合わせて使用されます。</p>
+        </section>
+        <section id="features">
+            <h2>JavaScriptの特徴</h2>
+            <ul>
+                <li>インタラクティブなウェブページを作成できる</li>
+                <li>データの検証や操作が可能</li>
+                <li>APIとの連携が容易</li>
+            </ul>
+        </section>
+        <section id="example">
+            <h2>簡単な例</h2>
+            <p>以下のボタンをクリックすると、メッセージが表示されます。</p>
+            <button onclick="showMessage()">クリックしてメッセージを表示</button>
+            <p id="message"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JavaScriptの紹介</p>
+    </footer>
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerText = 'こんにちは、JavaScript!';
+        }
+    </script>
 </body>
 </html>
