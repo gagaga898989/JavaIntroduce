@@ -1,9 +1,3 @@
-body {
-    display: flex;
-    justify-content: center;
-    padding: 0px 10px;
-}
-
 .container {
     max-width: 768px;
     width: 100%;
@@ -30,3 +24,63 @@ html {
     border-left: 15px solid; /* 要素境界の左端に幅 20px の実線 */
     border-bottom: 4px solid; /* 要素境界の下端に幅 4px の実線 */
   }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #e4e4e4;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
