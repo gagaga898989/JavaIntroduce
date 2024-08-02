@@ -88,5 +88,5 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 100px; /* フッターの高さ */
+    height: 50px; /* フッターの高さ */
 }
