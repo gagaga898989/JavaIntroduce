@@ -80,6 +80,11 @@ button {
     cursor: pointer;
 }
 
+::selection {
+  background-color: #F7E300; /* 山吹色 */
+  color: black; /* テキスト色 */
+}
+
 button:hover {
     background: #555;
 }
