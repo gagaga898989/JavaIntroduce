@@ -21,9 +21,10 @@ html {
     font-weight: normal;
     font-size: 2rem;
     padding-left: 10px; /* 要素内側の左部に 10px の余白 */
-    border-left: 15px solid; /* 要素境界の左端に幅 20px の実線 */
+    border-left: 15px solid; /* 要素境界の左端に幅 15px の実線 */
     border-bottom: 4px solid; /* 要素境界の下端に幅 4px の実線 */
-  }
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -55,7 +56,6 @@ h1 {
   /*線の種類（二重線）太さ 色*/
   border-bottom: double 5px #FFC778;
 }
-
 
 ul {
     list-style: none;
@@ -89,4 +89,3 @@ footer {
     width: 100%;
     bottom: 0;
 }
-
