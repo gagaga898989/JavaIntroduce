@@ -18,31 +18,43 @@
         </section>
         <section id="features">
             <h2>JavaScriptとJavanの違い</h2>
-            <p>JavaScriptとJavaは、名前は似ていますが用途や動作環境が異なります。JavaScriptは1995年にネットスケープのブレンダン・アイク氏が開発し、主にブラウザで動作してWebページの見栄えを向上させます。一方、Javaはサン・マイクロシステムズが開発し、コンパイル後にJava仮想マシン上で動作するアプリケーションや業務システムの開発に使用されます。両者は異なる目的と動作環境を持つ別物です。</p>
+            <p>JavaScriptとJavaは、名前は似ていますが用途や動作環境が異なります。JavaScriptは1995年にネットスケープのブレンダン・アイク氏が開発し、HTML・ CSSだけでは実現できないホームページ体験の提供を目的に開発されたプログラミング言語。一方、Javaはサン・マイクロシステムズが開発し、コンパイル後にJava仮想マシン上で動作するアプリケーションや業務システムの開発に使用されます。両者は異なる目的と動作環境を持つ別物です。</p>
             <h2>JavaScriptの特徴</h2>
     <ul>
         <li><strong>高い互換性:</strong> ほとんどのウェブブラウザがJavaScriptをサポートしているため、特別なプラグインをインストールしなくてもスクリプトが実行できます。</li>
+        <li>→Webブラウザさえあれば動作する</li>
         <li><strong>初心者にも取り入れやすい:</strong> サーバーを介さずに動きが確認できるので、取り入れやすい</li>
         <li><strong>プロトタイプベースのオブジェクト指向:</strong> JavaScriptはクラスベースではなく、オブジェクトのプロトタイプを使って新しいオブジェクトを作成します。</li>
         <li><strong>非同期処理:</strong> Promiseやasync/awaitを使って、非同期処理を簡単に扱えます。</li>
         <li><strong>豊富なエコシステム:</strong> npm（Node Package Manager）を使って、多くのパッケージやライブラリを利用できるため、開発効率が向上します。</li>
-    </ul>
+    </ul>      
+        </section>
+        <section id = "webuse">
+            <h2>ホームページにおけるJavaScriptの役割</h2>
+            <p>・ホームページに豊かな表現を追加できる</p>
+            <p>ユーザーのアクションに対して異なるコンテンツを表示できる。</p>
         </section>
         <section id="example">
             <h2>簡単な例</h2>
             <p>以下のボタンをクリックすると、メッセージが表示されます。</p>
             <button onclick="showMessage()">クリックしてメッセージを表示</button>
             <p id="message"></p>
+            <p>入力欄に文字を打ち込みボタンを押すと下に表示させる動作</p>
+            <!-- ユーザーが文字を入力するための入力欄 -->
+            <input type="text" id="userInput" placeholder="ここに文字を入力してください">
+
+            <!-- ボタンをクリックすると入力した文字が表示される -->
+            <button id="displayButton">表示</button>
+
+            <!-- 入力した文字が表示される場所 -->
+            <p id="displayArea"></p>
+
         </section>
         <h2>参考HP</h2>
         <p></p>
         <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <h2>プログラム作成補助</h2>
+        <p>ChatGPT</p>
         
         
     </main>
