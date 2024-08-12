@@ -28,3 +28,32 @@ document.getElementById("displayButton").addEventListener("click", function() {
 });
 
 });
+
+
+$(document).ready(function () {
+  // スクロールが発生したら
+  $(window).on("scroll", function (e) {
+    var targetElement = false;
+    // 目次の各リンクに対して
+    $(".table-of-contents li a").each(function (i, element) {
+      // リンクからセクションのIDを取得
+      var headingName = $(element).attr("href").replace(/^#/, "");
+      
+      // ハイライトが発生するスクロール位置のオフセットを設定
+      var offset = 60;
+      
+      // 対応するセクションの上端からの距離を計算
+      var headingPosition = $("#" + headingName)[0].offsetTop - offset;
+      // ハイライト用のクラスを一旦削除
+      $(element).removeClass("toc-highlight");
+      // スクロール位置がセクションに達したらそのリンクを記憶
+      if (window.scrollY >= headingPosition) {
+        targetElement = element;
+      }
+    });
+    // もしハイライト対象があればそのリンクにクラスを追加
+    if (targetElement) {
+      $(targetElement).addClass("toc-highlight");
+    }
+  });
+});
