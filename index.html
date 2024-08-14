@@ -66,8 +66,28 @@
             <div class="code-container">
         　　　　<button class="copy-button" onclick="copyCode()">Copy</button>
         　　　　<pre><code class="highlight">
-　　　　　　　　　　　const greeting = "Hello, World!";
-　　　　　　　　　　　console.log(greeting);
+　　　　　　　　　　　// script.js
+document.getElementById('toc-icon').addEventListener('click', function() {
+    var toc = document.getElementById('toc');
+    if (toc.style.display === 'block') {
+        toc.style.display = 'none';
+    } else {
+        toc.style.display = 'block';
+    }
+});
+
+document.querySelectorAll('#toc a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: 'smooth'
+        });
+        document.getElementById('toc').style.display = 'none';
+    });
+});
         　　</code></pre>
     　　　　</div>
             <p id="message"></p>
