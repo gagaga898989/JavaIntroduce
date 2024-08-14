@@ -57,11 +57,19 @@
             <h2>JQueryのデメリット</h2>
             <li><strong>処理が遅くなる場合がある</strong></li>
             <li><strong>問題が発生した際に内容を理解してないと対処が難しくなる可能性がある
-            　　　　　　→どのように記述、処理されるのか把握することが必要</strong></li>
+            　　　　　　        →どのように記述、処理されるのか把握することが必要</strong></li>
         <section id="example">
-            <h2>簡単な例</h2>
+            <h2>簡単なJavaScriptの例</h2>
             <p>以下のボタンをクリックすると、メッセージが表示されます。</p>
             <button onclick="showMessage()">クリックしてメッセージを表示</button>
+            <p>プログラムコード</p>
+                <div class="code-container">
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre><code class="highlight">
+　　　　　　　　const greeting = "Hello, World!";
+　　　　　　　　console.log(greeting);
+        </code></pre>
+    </div>
             <p id="message"></p>
 
         </section>
