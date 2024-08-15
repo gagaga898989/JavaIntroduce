@@ -20,3 +20,10 @@ document.querySelectorAll('#toc a').forEach(anchor => {
         document.getElementById('toc').style.display = 'none';
     });
 });
+
+// jQueryを使用してボタンのクリックイベントを設定
+$(document).ready(function(){
+    $('#toggleButton').click(function(){
+        $('#text').toggle(); // テキストの表示/非表示を切り替え
+    });
+});
