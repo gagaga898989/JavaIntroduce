@@ -102,6 +102,13 @@ document.querySelectorAll('#toc a').forEach(anchor => {
                 <div class="code-container">
         　　　　<button class="copy-button" onclick="copyCode()">Copy</button>
         　　　　<pre><code class="highlight">
+// jQueryを使用してボタンのクリックイベントを設定
+$(document).ready(function(){
+    $('#toggleButton').click(function(){
+        $('#text').toggle(); // テキストの表示/非表示を切り替え
+    });
+});
+
             </code></pre>
             </div>
 
