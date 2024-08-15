@@ -66,7 +66,6 @@
             <div class="code-container">
         　　　　<button class="copy-button" onclick="copyCode()">Copy</button>
         　　　　<pre><code class="highlight">
-　　　　　　　　　　　// script.js
 document.getElementById('toc-icon').addEventListener('click', function() {
     var toc = document.getElementById('toc');
     if (toc.style.display === 'block') {
@@ -91,6 +90,20 @@ document.querySelectorAll('#toc a').forEach(anchor => {
         　　</code></pre>
     　　　　</div>
             <p id="message"></p>
+            <h2>簡単なJQueryの例</h2>
+            <p>下のボタンをクリックするとテキストの表示非表示が切り替わります。</p>
+<body>
+    <button id="toggleButton">テキストを表示</button>
+    <p id="text" style="display: none;">これは隠れていたテキストです。</p>
+    <script src="script-jquery.js"></script>
+    <!-- <script src="script-js.js"></script> --> <!-- こちらを有効にしてJavaScript版を使用 -->
+</body>
+
+                <div class="code-container">
+        　　　　<button class="copy-button" onclick="copyCode()">Copy</button>
+        　　　　<pre><code class="highlight">
+            </code></pre>
+            </div>
 
         </section>
         <h2>参考HP</h2>
